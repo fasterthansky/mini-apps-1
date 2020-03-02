@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TIC-TAC-TOE</title>
-  </head>
-  <body>
-    <h1>Let's Play TIC-TAC-TOE</h1>
-  <div id='app'></div>
-  <table border width="300" height="300">
-    <tr>
-        <th width="100px" height = "100px" id='1'></th>
-        <th width="100px" height = "100px" id='2'></th>
-        <th width="100px" height = "100px" id='3'></th>
-      </tr>
-      <tr>
-        <th width="100px" height = "100px" id='4'></th>
-        <th width="100px" height = "100px" id='5'></th>
-        <th width="100px" height = "100px" id='6'></th>
-      </tr>
-    <tr>
-        <th width="100px" height = "100px" id='7'></th>
-        <th width="100px" height = "100px" id='8'></th>
-        <th width="100px" height = "100px" id='9'></th>
-      </tr>
-  </table>
 
-  <script src="app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TIC-TAC-TOE</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <h1>Let's Play TIC-TAC-TOE</h1>
+  <h2>It's X's turn!</h2>
+
+  <!-- <div id='app'></div> -->
+  <div class="flex-container flex-column">
+    <div class="flex-container flex-wrap" id="board">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+    <button id="reset-button">reset</button>
+</div>
+    <script src="app.js"></script>
+</body>
+
 </html>
