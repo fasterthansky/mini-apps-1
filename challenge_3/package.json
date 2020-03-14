@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "nodemon --inspect server.js",
-    "rebuild": "babel --watch client --out-dir public/compiled/ --presets=env,react --source-maps inline"
+    "rebuild": "./node_modules/.bin/babel  client --out-dir public/compiled/ --presets=env,react --source-maps inline --watch"
   },
   "author": "Jose Velez",
   "license": "ISC"

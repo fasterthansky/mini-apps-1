@@ -1,5 +1,3 @@
-
-
 const express = require('express');
 const app = express();
 const host = '127.0.0.1';
@@ -18,7 +16,6 @@ app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
 app.post('/', (req, res) => {
   let instance = new dbInstance(req.body);
 
@@ -30,7 +27,5 @@ app.post('/', (req, res) => {
   res.status(200);
   res.end();
 });
-
-
 
 app.listen(3000, host, () => console.log('Server listening on ', host, ':', port));

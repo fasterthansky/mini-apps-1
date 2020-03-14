@@ -10,9 +10,11 @@ const CheckoutModelSchema = new Schema({
     City: String,
     State: String,
     Zipcode: String,
+    'Phone Number': String,
     'Credit Card Number': String,
     'Expiration Data': String,
     'Billing Zipcode': String
 })
 
 module.exports = mongoose.model('CheckoutModel', CheckoutModelSchema );
+
